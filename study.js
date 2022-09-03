@@ -1,14 +1,9 @@
-const message = '   good morning   ';
+const message = 'good morning';
 
-const ts = message.trimStart(); //  'good morning   '
+const sw = message.startsWith('hi'); //  false
 
-const te = message.trimEnd(); //  '   good morning'
+const ew = message.endsWith('ing'); //  true
 
-const tr = message.trim(); //  'good morning'
+const i = message.indexOf('o'); //  1; first index
 
-//  padding was introduced in ES2017
-//  maxLength should be greater than the length of the string
-
-const ps = tr.padStart(15, '#'); //  '###good morning'
-
-const pe = tr.padEnd(15, '%'); //  'good morning%%%'
+const e = message.lastIndexOf('o'); //  6
