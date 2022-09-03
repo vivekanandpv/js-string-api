@@ -1,7 +1,4 @@
-const message = 'Good Morning';
+const message = 'blue;red;green';
 
-const group = message.match(/^G[aeiou]{2}/); //  regex match group
-
-const regex = /^G[aeiou]{2}/;
-
-const result = regex.test(message); //  true
+//  split splits on the delimiter and returns string array
+const parts = message.split(';');
