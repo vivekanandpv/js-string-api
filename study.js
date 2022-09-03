@@ -1,5 +1,7 @@
 const message = 'Good Morning';
 
-const sub = message.substring(2, 6); //  end is not inclusive
+const group = message.match(/^G[aeiou]{2}/); //  regex match group
 
-const s1 = message.substr(2, 4); //  deprecated; 4 is length
+const regex = /^G[aeiou]{2}/;
+
+const result = regex.test(message); //  true
